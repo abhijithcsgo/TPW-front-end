@@ -22,12 +22,13 @@
 
     <link
       rel="canonical"
-      href="https://demo-basic.adminkit.io/pages-profile.html"
+      href="https://demo-basic.adminkit.io/pages-blank.html"
     />
 
-    <title>Profile</title>
+    <title>R&A</title>
 
     <link href="css/app.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
       rel="stylesheet"
@@ -38,11 +39,13 @@
     <div class="wrapper">
       <nav id="sidebar" class="sidebar js-sidebar">
         <div class="sidebar-content js-simplebar">
-          <a class="sidebar-brand" href="pages-blank.html">
+          <a class="sidebar-brand" href="pages-accomodation.html">
             <span class="align-middle">TRIP PLANNER</span>
           </a>
 
           <ul class="sidebar-nav">
+            <!-- <li class="sidebar-header">Pages</li> -->
+
             <!-- <li class="sidebar-item">
               <a class="sidebar-link" href="index.html">
                 <i class="align-middle" data-feather="sliders"></i>
@@ -50,38 +53,17 @@
               </a>
             </li> -->
 
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="pages-blank.html">
+            <li class="sidebar-item active">
+              <a class="sidebar-link" href="pages-accomodation.html">
                 <i class="align-middle" data-feather="home"></i>
                 <span class="align-middle">Home</span>
               </a>
             </li>
 
-            <li class="sidebar-item active">
-              <a class="sidebar-link" href="pages-profile.html">
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="acco-profile.html">
                 <i class="align-middle" data-feather="user"></i>
                 <span class="align-middle">Profile</span>
-              </a>
-            </li>
-
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="pages-about.html">
-                <i class="align-middle" data-feather="info"></i>
-                <span class="align-middle">About</span>
-              </a>
-            </li>
-
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="pages-review.html">
-                <i class="align-middle" data-feather="edit-2"></i>
-                <span class="align-middle">Review</span>
-              </a>
-            </li>
-
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="pages-add-spot.html">
-                <i class="align-middle" data-feather="upload"></i>
-                <span class="align-middle">Add Spot</span>
               </a>
             </li>
 
@@ -118,14 +100,14 @@
                   data-bs-toggle="dropdown"
                 >
                   <img
-                    src="https://cdn.iconscout.com/icon/free/png-256/free-user-circle-3609976-3014616.png"
+                    src="https://www.freeiconspng.com/thumbs/restaurant-icon-png/restaurant-icon-png-plate-1.png"
                     class="avatar img-fluid rounded me-1"
-                    alt="User Name"
+                    alt="Restaurant Name"
                   />
-                  <span class="text-dark">User Name</span>
+                  <span class="text-dark">Restaurant Name</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end">
-                  <a class="dropdown-item" href="pages-profile.html"
+                  <a class="dropdown-item" href="acco-profile.html"
                     ><i class="align-middle me-1" data-feather="user"></i>
                     Profile</a
                   >
@@ -139,56 +121,86 @@
         </nav>
 
         <main class="content">
-          <div class="container-fluid p-0">
-            <div class="mb-3">
-              <h1 class="h3 d-inline align-middle">Profile</h1>
-            </div>
-            <div class="row">
-              <div class="col-md-4 col-xl-3">
-                <div class="card mb-3">
-                  <div class="card-header">
-                    <h5 class="card-title mb-0">Profile Details</h5>
-                  </div>
-                  <div class="card-body text-center">
-                    <img
-                      src="img/avatars/avatar-4.jpg"
-                      alt="Christina Mason"
-                      class="img-fluid rounded-circle mb-2"
-                      width="128"
-                      height="128"
-                    />
-                    <h5 class="card-title mb-0">Christina Mason</h5>
-                    <div class="text-muted mb-2">Lead Developer</div>
-                  </div>
-                  <hr class="my-0" />
-                </div>
-              </div>
+          <div class="card">
+            <div class="card-body">
+              <!-- <p>
+                users can contribute to the website by adding new tourist spots
+                to the user-driven database. Along with this user can review
+                their travel experience.
+              </p> -->
 
-              <div class="col-md-8 col-xl-9">
-                <div class="card">
-                  <div class="card-header">
-                    <h5 class="card-title mb-0">Change password</h5>
-                  </div>
+              <form action="">
+                <h5 class="card-title mb-0">Enter Details</h5>
+                <br />
 
-                  <div class="card-body h-100">
-                    <input
-                      type="password"
-                      class="form-control"
-                      placeholder="Old Password"
-                    />
-                    <br />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Name"
+                  required
+                />
+                <br />
 
-                    <input
-                      type="password"
-                      class="form-control"
-                      placeholder="New Password"
-                    />
-                    <br />
-                    <button class="btn btn-secondary">Change</button>
-                  </div>
-                  <hr class="my-0" />
-                </div>
-              </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="District"
+                  required
+                />
+                <br />
+
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Location"
+                  required
+                />
+                <br />
+
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Lowest Price"
+                  required
+                />
+                <br />
+
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Highest Price"
+                  required
+                />
+                <br />
+
+                <textarea
+                  class="form-control"
+                  rows="2"
+                  placeholder="Restaurant facility"
+                  required
+                ></textarea>
+
+                <br />
+
+                <h5 class="card-title mb-0">Upload photos</h5>
+                <br />
+
+                <input
+                  type="file"
+                  class="form-control"
+                  placeholder="Tourist Spot Name"
+                />
+                <br />
+
+                <input
+                  type="file"
+                  class="form-control"
+                  placeholder="Tourist Spot Name"
+                />
+                <br />
+
+                <button class="btn btn-secondary">Submit</button>
+              </form>
             </div>
           </div>
         </main>
